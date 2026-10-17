@@ -138,7 +138,7 @@ class _FocusCard extends ConsumerWidget {
                 : usageSnapshot.hasUsageAccess
                     ? formatHours(
                         usage.totalHours,
-                        localeCode: locale.languageCode,
+                        localeCode: Localizations.localeOf(context).languageCode,
                       )
                     : strings.usageDataUnavailable,
             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
